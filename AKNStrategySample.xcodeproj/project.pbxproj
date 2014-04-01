@@ -21,6 +21,9 @@
 		75A6CD3118EB1E7800A2F8AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A6CD1318EB1E7800A2F8AF /* UIKit.framework */; };
 		75A6CD3918EB1E7800A2F8AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75A6CD3718EB1E7800A2F8AF /* InfoPlist.strings */; };
 		75A6CD3B18EB1E7800A2F8AF /* AKNStrategySampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6CD3A18EB1E7800A2F8AF /* AKNStrategySampleTests.m */; };
+		75A6CD4618EB1E9A00A2F8AF /* AKNStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6CD4518EB1E9A00A2F8AF /* AKNStrategyViewController.m */; };
+		75A6CD4A18EB1F0300A2F8AF /* AKNStrategyA.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6CD4918EB1F0300A2F8AF /* AKNStrategyA.m */; };
+		75A6CD4D18EB1F0C00A2F8AF /* AKNStrategyB.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6CD4C18EB1F0C00A2F8AF /* AKNStrategyB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		75A6CD3618EB1E7800A2F8AF /* AKNStrategySampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AKNStrategySampleTests-Info.plist"; sourceTree = "<group>"; };
 		75A6CD3818EB1E7800A2F8AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75A6CD3A18EB1E7800A2F8AF /* AKNStrategySampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKNStrategySampleTests.m; sourceTree = "<group>"; };
+		75A6CD4418EB1E9A00A2F8AF /* AKNStrategyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNStrategyViewController.h; sourceTree = "<group>"; };
+		75A6CD4518EB1E9A00A2F8AF /* AKNStrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNStrategyViewController.m; sourceTree = "<group>"; };
+		75A6CD4718EB1EE900A2F8AF /* AKNStrategyReactable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNStrategyReactable.h; sourceTree = "<group>"; };
+		75A6CD4818EB1F0300A2F8AF /* AKNStrategyA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNStrategyA.h; sourceTree = "<group>"; };
+		75A6CD4918EB1F0300A2F8AF /* AKNStrategyA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNStrategyA.m; sourceTree = "<group>"; };
+		75A6CD4B18EB1F0C00A2F8AF /* AKNStrategyB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNStrategyB.h; sourceTree = "<group>"; };
+		75A6CD4C18EB1F0C00A2F8AF /* AKNStrategyB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNStrategyB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +124,16 @@
 			children = (
 				75A6CD1E18EB1E7800A2F8AF /* AKNAppDelegate.h */,
 				75A6CD1F18EB1E7800A2F8AF /* AKNAppDelegate.m */,
+				75A6CD4718EB1EE900A2F8AF /* AKNStrategyReactable.h */,
+				75A6CD4818EB1F0300A2F8AF /* AKNStrategyA.h */,
+				75A6CD4918EB1F0300A2F8AF /* AKNStrategyA.m */,
+				75A6CD4B18EB1F0C00A2F8AF /* AKNStrategyB.h */,
+				75A6CD4C18EB1F0C00A2F8AF /* AKNStrategyB.m */,
 				75A6CD2118EB1E7800A2F8AF /* Main.storyboard */,
 				75A6CD2418EB1E7800A2F8AF /* AKNViewController.h */,
 				75A6CD2518EB1E7800A2F8AF /* AKNViewController.m */,
+				75A6CD4418EB1E9A00A2F8AF /* AKNStrategyViewController.h */,
+				75A6CD4518EB1E9A00A2F8AF /* AKNStrategyViewController.m */,
 				75A6CD2718EB1E7800A2F8AF /* Images.xcassets */,
 				75A6CD1618EB1E7800A2F8AF /* Supporting Files */,
 			);
@@ -252,7 +269,10 @@
 			files = (
 				75A6CD1C18EB1E7800A2F8AF /* main.m in Sources */,
 				75A6CD2618EB1E7800A2F8AF /* AKNViewController.m in Sources */,
+				75A6CD4D18EB1F0C00A2F8AF /* AKNStrategyB.m in Sources */,
+				75A6CD4618EB1E9A00A2F8AF /* AKNStrategyViewController.m in Sources */,
 				75A6CD2018EB1E7800A2F8AF /* AKNAppDelegate.m in Sources */,
+				75A6CD4A18EB1F0300A2F8AF /* AKNStrategyA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,22 +8,21 @@
 
 #import "AKNViewController.h"
 
-@interface AKNViewController ()
-
-@end
+#import "AKNStrategyViewController.h"
+#import "AKNStrategyA.h"
+#import "AKNStrategyB.h"
 
 @implementation AKNViewController
 
-- (void)viewDidLoad
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    AKNStrategyViewController *viewController = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"A"]) {
+        viewController.strategy = [AKNStrategyA new];
+    }
+    if ([segue.identifier isEqualToString:@"B"]) {
+        viewController.strategy = [AKNStrategyB new];
+    }
 }
 
 @end
